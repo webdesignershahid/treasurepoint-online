@@ -1,0 +1,74 @@
+.contact-widget-wrap {
+    padding: 60px 0;
+
+    .widget-wrap {
+        padding: 30px;
+        
+        .title {
+            position: relative;
+            border-bottom: 1px solid #e1e1e1;
+            margin-bottom: 10px;
+            padding-bottom: 5px;
+            
+            h4 {
+                font-weight: 600;
+            }
+
+            svg {
+                position: absolute;
+                top: 4px;
+                right: 0;
+            }
+        }
+
+        .chat-btn {
+            display: inline-block;
+            padding: 8px 30px;
+            font-weight: 600;
+            background-color: var(--color-theme);
+            color: var(--color-white);
+            margin-top: 10px;
+        }
+    }
+}
+
+.contact-map-form {
+    padding: 60px 0 90px;
+
+    .contact-form {
+        padding: 30px;
+
+        h4 {
+            font-weight: 600;
+            margin-bottom: 15px;
+        }
+
+        input, textarea {
+            border-radius: 0;
+
+            &:focus {
+                outline: none;
+                box-shadow: none;
+                border-color: var(--color-theme);
+            }
+        }
+        .submit-form {
+            button {
+                border: none;
+                background-color: var(--color-theme);
+                color: var(--color-white);
+                font-weight: 500;
+                padding: 10px 20px;
+                font-size: 1rem;
+                margin: 15px 0 0;
+                min-width: 100px;
+            }
+        }
+    }
+
+    .map {
+        padding: 30px;
+        min-height: 300px;
+        background-color: #fff;
+    }
+}

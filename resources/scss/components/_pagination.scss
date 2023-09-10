@@ -1,0 +1,32 @@
+.pagination-box {
+    padding: 40px 0;
+    overflow: hidden;
+
+    ul {
+        li {
+            margin: 5px 8px;
+            display: inline-block;
+
+            .page-link {
+                background-color: var(--color-white);
+                color: var(--color-black);
+                box-shadow: none;
+                min-width: 40px;
+                border-radius: 3px;
+
+                &:hover {
+                    background-color: var(--color-theme);
+                    color: var(--color-white);
+                }
+            }
+
+            &.active {
+                .page-link {
+                    background-color: var(--color-theme);
+                    color: var(--color-white);
+                    border: 0;
+                }
+            }
+        }
+    }
+}

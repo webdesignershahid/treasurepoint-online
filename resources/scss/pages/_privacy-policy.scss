@@ -1,0 +1,74 @@
+.privacy-policy {
+    padding: 80px 0;
+
+    .inner-text {
+        background-color: var(--color-white);
+        padding: 36px 42px;
+    }
+
+    h1 {
+        font-weight: 700;
+        margin-bottom: 30px;
+    }
+
+    h4 {
+        font-weight: 700;
+        margin-top: 50px;
+        margin-bottom: 10px;
+    }
+    p {
+        font-size: 14px;
+        line-height: 2;
+        margin-top: 22px;
+    }
+    ul {
+        padding-left: 35px;
+        margin-top: 25px;
+
+        li {
+            font-size: 14px;
+            line-height: 2;
+        }
+    }
+}
+
+.faq {
+    padding: 80px 0;
+
+    .faq-inner {
+        background-color: var(--color-white);
+        padding: 36px 42px;
+
+        h1 {
+            font-weight: 700;
+            margin-bottom: 30px;
+        }
+        h3 {
+            font-weight: 700;
+            margin-top: 50px;
+            margin-bottom: 10px;
+        }
+        
+    }
+    .accordion-item {
+        .card-header {
+            padding: 0;
+        }
+        h5 {
+            background-color: var(--color-grayblack);
+            color: var(--color-white);
+            padding: 20px 15px;
+            font-size: 18px;
+            cursor: pointer;
+        }
+
+        ol {
+            padding-left: 25px;
+        }
+        a {
+            text-decoration: underline;
+            color: var(--color-theme);
+            text-underline-offset: 2px;
+        }
+    }
+}

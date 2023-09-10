@@ -1,0 +1,171 @@
+.payment-method-wrapper {
+    padding: 90px 0;
+
+    .payment-method {
+        padding: 30px;
+
+        .heading {
+            font-weight: 700;
+            border-bottom: 1px solid #dee2e6;
+            margin-bottom: 20px;
+            padding-bottom: 15px;
+            position: relative;
+    
+            &::before {
+                content: '';
+                position: absolute;
+                left: 0;
+                bottom: 0;
+                height: 3px;
+                width: 60px;
+                background-color: #dee2e6;
+            }
+        }        
+    }
+
+    .payment-method-item {
+        position: relative;
+        min-width: 250px;
+        margin-top: 20px;
+        margin-right: 35px;
+
+        label {
+            display: block;
+            text-transform: uppercase;
+            position: relative;
+            border: 3px solid #d6d6d6;
+            cursor: pointer;
+            p {
+                font-weight: 700;
+            }
+
+            &::before {
+                content: "\F058";
+                position: absolute;
+                font-family: 'Font Awesome 5 Free';
+                display: inline-block;
+                color: #009688;
+                font-size: 34px;
+                background: #fff;
+                right: -20px;
+                top: -20px;
+                width: 40px;
+                height: 40px;
+                border-radius: 50%;
+                line-height: 40px;
+                text-align: center;
+                font-weight: 700;
+                z-index: 1;
+                opacity: 0;
+                transition: .2s;
+            }
+        }
+        input:checked ~ label {
+            border-color: var(--color-theme) !important;
+            // &::before {
+
+            // }
+        }
+        input:checked ~ label::before {
+            opacity: 1;
+        }
+        input:checked ~ label span.fab {
+            background-color: #009688;
+        }
+    }
+
+    .payment-method {
+        .billing-address {
+            margin-bottom: 25px;
+            p {
+                font-size: 14px;
+                line-height: normal;
+            }
+            .title {
+                font-weight: 600;
+                font-size: 16px;
+
+                button {
+                    background-color: transparent;
+                    padding: 0;
+                    border: 0;                    
+                }
+            }           
+        }
+        form {
+            input, select {
+                box-shadow: none;
+
+                &:focus {
+                    box-shadow: none;
+                }
+            }
+            .submit {
+                background-color: var(--color-theme);
+                color: var(--color-white);
+                font-weight: 600;
+                display: block;
+                text-align: center;
+            }
+        }
+    }
+
+    .sidebar {
+        h4 {
+            border-bottom: 1px solid #dee2e6;
+            font-weight: 700;
+            font-size: 1rem;
+            margin-bottom: 15px;
+            padding-bottom: 10px;
+            position: relative;
+
+            &::before {
+                content: '';
+                position: absolute;
+                left: 0;
+                bottom: 0;
+                height: 3px;
+                width: 60px;
+                background-color: #dee2e6;
+            }
+        }
+        .summery-table {
+            .product {
+                a {
+                    line-height: 18px;
+                    display: block;
+                    font-weight: 400;
+                    margin-bottom: 5px;
+                }
+                p {
+                    font-size: 14px;
+                    line-height: normal;
+                    margin-top: 5px;
+                }
+
+                tr {
+                    margin-bottom: 15px;
+                    display: block;
+                }
+            }
+        }
+        .rout-to {
+            margin-top: 30px;
+            a {
+                display: block;
+                text-align: center;
+                border: 1px solid #dee2e6;
+                padding: 14px 15px;
+                border-radius: 4px;
+                font-weight: 600;
+                background-color: var(--color-theme);
+                color: var(--color-white);
+                transition: all 0.2s;
+
+                &:hover {
+                    background-color: #9c1800;
+                }
+            }
+        }
+    }
+}

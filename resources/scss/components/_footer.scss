@@ -1,0 +1,128 @@
+// Footer Top
+.footer-top {
+    background-color: var(--color-grayblack);
+
+    a {
+        padding: 24px;
+        transition: all 0.3s;
+    }
+
+    .col-md-4:hover {
+        background-color: rgba($color: #000000, $alpha: 0.1);
+    }
+    
+}
+.main-footer {
+    padding: 60px 0;
+}
+.footer-widget {
+
+    .about-company {
+        img {
+            margin-bottom: 20px;
+        }
+    }
+    .follow-us {
+        margin: 30px 0;
+
+        h6 {
+            font-weight: 600;
+            margin-bottom: 10px;
+        }
+        i {
+            width: 40px;
+            height: 40px;
+            line-height: 40px;
+            text-align: center;
+            border-radius: 50%;
+            color: var(--color-white);
+            border: 1px solid var(--color-white);
+            transition: all 0.2s;
+
+            &:hover {
+                color: var(--color-white);
+
+                &[class*=facebook] {
+                    background-color: #3b5998;
+                    border-color: #3b5998;
+                }
+                &[class*=twitter] {
+                    background-color: #55acee;
+                    border-color: #55acee;
+                }
+                &[class*=linkedin] {
+                    background-color: #007bb5;
+                    border-color: #007bb5;
+                }
+                &[class*=instagram] {
+                    background-color: #e4405f;
+                    border-color: #e4405f;
+                }
+            }
+        }
+    }
+    .subscribe {
+        h6 {
+            font-weight: 600;
+            margin-bottom: 10px;
+        }
+        .input-group {
+            border-radius: 8px;
+            overflow: hidden;
+        }
+        input {
+            height: 45px;
+            border-radius: 0;
+
+            &:focus {
+                border-color: var(--color-theme);
+            }
+        }
+        button {
+            border: 0;
+            background-color: var(--color-theme);
+            color: var(--color-white);
+            padding: 0 28px;
+            font-weight: 600;
+        }
+    }
+
+    .widget-title {
+        margin-top: 40px;
+        margin-bottom: 15px;
+        font-weight: 600;
+    }
+
+    a.link {
+        line-height: 30px;
+        color: var(--color-white);
+        transition: all 0.3s;
+        font-weight: 300;
+
+        &:hover {
+            padding-left: 12px;
+        }
+    }
+
+    .contact-info {
+        li {
+            position: relative;
+            padding-left: 32px;
+            line-height: 30px;
+            color: var(--color-white);
+            
+            i {
+                position: absolute;
+                left: 0;
+                top: 7px
+            }
+        }
+    }
+}
+.footer-bottom {
+    p {
+        font-size: 0.87rem;
+        line-height: 1.7;
+        font-weight: 300;
+    }
+}

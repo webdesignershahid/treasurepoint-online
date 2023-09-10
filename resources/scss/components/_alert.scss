@@ -1,0 +1,15 @@
+.header-alert {
+    h5 {
+        font-size: 1rem;
+    }
+    .btn {
+        border: 1px solid var(--color-grayblack);
+        color: var(--color-white);
+        font-size: 1rem;
+        font-weight: 400;
+        background-color: var(--color-grayblack);
+        margin-left: 10px;
+        border-radius: 0;
+        box-shadow: none;
+    }
+}

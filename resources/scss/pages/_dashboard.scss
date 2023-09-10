@@ -1,0 +1,248 @@
+.dashboard {
+
+    .widget-profile-box {
+        .image {
+            width: 100px;
+            height: 100px;
+            background-color: #eee ;
+            border-radius: 50%;
+            margin: 0 auto;
+        }
+        .name {
+            font-size: 24px;
+            font-weight: 500;
+            margin-top: 5px;
+        }
+    }
+
+    .widget-navigation {
+
+        h5 {
+            font-weight: 600;
+        }
+        a {
+            font-size: 16px;
+            display: block;
+            font-weight: 400;
+            line-height: 32px;
+            border-bottom: 1px solid #ccc;
+            padding: 15px 0;
+            transition: 0.3s;
+
+            i {
+                width: 25px;
+                font-size: 18px;
+                color: #000;
+                transition: 0.3s;
+            }
+
+            &.active {
+                color: var(--color-theme);
+                font-weight: 600;
+
+                i {
+                    color: var(--color-theme);                    
+                }
+            }
+
+            &:hover {
+                color: var(--color-theme);
+
+                i {
+                    color: var(--color-theme);
+                }
+            }
+        }
+    }
+
+    .dashboard-header {
+        h2 {
+            font-size: 24px;
+            font-weight: 700;
+            text-transform: uppercase;
+        }
+
+        .breadcrumb {
+            li {
+                &+li::before {
+                    content: '\f105';
+                    display: inline-block;
+                    font-family: 'Font Awesome 5 Free';
+                    font-weight: 900;
+                    margin: 0 8px;
+                    position: relative;
+                    top: 2px;
+                }
+
+                &.active {
+                    a {
+                        color: var(--color-theme);
+                    }
+                }
+            }
+        }
+    }
+
+    .single-activity {
+        position: relative; 
+
+        .icon {
+            position: absolute;
+            left: 15px;
+            width: 60px;      
+            height: 60px;
+            border-radius: 50%;
+            line-height: 60px;
+            text-align: center;
+            font-size: 24px;
+            font-weight: 900;
+            background-color: rgba(200, 31, 1, 0.1);
+            color: #f00;
+        }
+        .description {
+            padding-left: 75px;
+            margin: 7px 0 0;
+
+            h3 {
+                font-weight: 700;
+                font-size: 20px;                
+            }
+            p {
+                font-weight: 300;
+            }
+        }
+    }
+
+    .address {
+        h2 {
+            font-size: 24px;
+            font-weight: 700;
+            text-transform: uppercase;
+        }
+
+        a {
+            position: relative;
+            display: inline-block;
+            height: 40px;
+            width: 40px;
+            background-color: rgba(200, 31, 1, 0.1);
+            color: #f00;
+            border-radius: 50%;
+            line-height: 40px;
+            text-align: center;
+            top: -10px;
+        }
+        table {
+            tr {
+                td:first-child {
+                    min-width: 110px;
+                }
+            }
+        }
+    }
+
+    .purchase-history {
+        td[data-status="ordered"] {
+         color: #2fc9f7;
+         font-weight: 500;
+        }
+        td[data-status="shipping"] {
+         color: #9b59b6;
+         font-weight: 500;
+        }
+        td[data-status="processing"] {
+         color: #a7ad03;
+         font-weight: 500;
+        }
+        td[data-status="cencelled"] {
+         color: #e74c3c;
+         font-weight: 500;
+        }
+        td[data-status="delivered"] {
+         color: #16a085;
+         font-weight: 500;
+        }
+
+        td {
+            min-width: 140px;
+            .dropdown-menu {
+                margin: 0;
+                padding: 10px;
+                width: 220px;
+
+                a {
+                    display: block;
+                    padding: 5px 0;
+                }
+            }
+        }
+    }
+
+    .basic-info {
+        .profile-pic {
+            label {
+                text-align: right;
+                border: 1px solid #ddd;
+
+                strong {
+                    padding: 10px 15px;
+                    display: inline-block;
+                    background: #e6e6e6;
+                    font-weight: 300;
+                }
+            }
+        }
+
+        h3 {
+            font-size: 24px;
+            font-weight: 700;
+            text-transform: uppercase;
+        }
+    }
+
+    .shipping-info {
+        h3 {
+            font-size: 24px;
+            font-weight: 700;
+            text-transform: uppercase;
+        }
+    }
+
+
+    .reviews-inner {
+
+        .review-item {
+            padding: 18px;
+        }
+        .review-info {
+            margin-bottom: 16px;
+            p {
+                font-size: 14px;
+                line-height: normal;
+            }
+        }
+        h4 {
+            font-weight: 600;
+        }
+        .review-content {
+            margin-top: 15px;
+
+            p {
+                font-size: 14px;
+                line-height: 1.8;
+                margin-bottom: 10px;
+            }
+            .likes {
+                label {
+                    cursor: pointer;
+                    color: #aaa;
+
+                    &:hover {
+                        color: var(--color-theme);
+                    }
+                }
+            }
+        }
+    }
+
+}

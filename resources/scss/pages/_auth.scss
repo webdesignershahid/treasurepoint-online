@@ -1,0 +1,51 @@
+.user-authentication {
+    padding: 90px 0;
+
+    .title {
+        h4 {
+            font-weight: 700;
+        }
+    }
+
+    input:not([type='checkbox']) {
+        height: 45px;
+        border-radius: 0;
+
+        &:focus {
+            border-color: var(--color-theme);
+        }
+    }
+    button[type='submit'] {
+        background-color: var(--color-theme);
+        padding: 8px 18px;
+        color: var(--color-white);
+        font-weight: 600;
+    }
+
+    .checkbox-check, .form-footer {
+        a {
+            text-decoration: underline;
+        }
+    }
+    .login-with {
+        i {
+            height: 40px;
+            width: 40px;
+            border-radius: 50%;
+            line-height: 40px;
+            font-size: 16px;
+            text-align: center;
+            color: var(--color-white);
+            margin-top: 8px;
+        }
+        i[class*=facebook] {
+            background-color: #3b5998;
+        }
+        i[class*=twitter] {
+            background-color: #1da1f2;
+        }
+        i[class*=google] {
+            background-color: #ea4335;
+        }
+    }
+}

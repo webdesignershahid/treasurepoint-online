@@ -1,0 +1,280 @@
+// Hero 
+.hero {
+    padding: 20px 0;
+
+    .top-category-nav {
+
+        .category-nav-header {
+            font-weight: 600;
+            border-bottom: 1px solid #dee2e6;
+            margin-bottom: 5px;
+            padding-bottom: 8px;
+        }
+
+        ul {
+            li {
+                border-bottom: 1px solid #dee2e6;
+                padding: 8px 0;
+                a {
+                    transition: all 0.3s;
+                }
+                &:hover {
+                    a {
+                        color: var(--color-theme);
+                    }
+                }
+
+                i {
+                    margin-right: 12px;
+                }
+            }
+        }
+    }
+    // Banner slider
+    .banner-slider {
+
+        .owl-nav.disabled+.owl-dots {
+            margin: 0;
+            position: absolute;
+            bottom: 0;
+            width: 100%;
+
+            span {
+                width: 25px;
+                height: 3px;
+                border-radius: 0;
+            }
+            .active {
+
+                span {
+                    background-color: var(--color-theme);
+                }
+            }
+        }
+    }
+}
+
+// vehicle Selector
+.vehicle-selector {
+    margin-top: 24px;
+    padding: 20px;
+    background: linear-gradient(90deg,#c80000,#333f4e 90%);
+
+    .header-text {
+        .title {
+            font-weight: 600;
+            margin-bottom: 8px;
+        }
+        .subtitle {
+            font-weight: 300;
+        }
+    }
+
+    .vehicle-selector-form {
+
+        select {
+            background-color: transparent;
+            border-radius: 0;
+            border: 0;
+            height: 45px;
+            color: var(--color-white);
+            box-shadow: none;
+            border-bottom: 1px solid var(--color-white);
+            padding: 0;
+
+            option {
+                color: var(--color-black);
+            }
+        }
+        button[type=submit] {
+            background-color: var(--color-theme);
+            color: var(--color-white);
+            font-weight: 600;
+            height: 45px;
+            width: 100%;
+            border: 0;
+        }
+    }
+}
+
+.vehicle-selector-wrap {
+
+    .vehicle-selector {
+
+        padding: 22px;
+        margin-bottom: 50px;
+
+        @media #{$md} {
+            padding: 36px;
+        }
+
+        select {
+            background-color: white;
+            border-radius: 0;
+            height: 45px;
+            color: var(--color-black);
+            box-shadow: none;
+            border: 1px solid var(--color-white);
+            padding: 10px 15px;
+
+            option {
+                color: var(--color-black);
+            }
+        }
+    }
+}
+
+// Popular Category
+.popular-category {
+    padding: 90px 0;
+
+    .section-title {
+        margin-bottom: 20px;
+
+        @media #{$md} {
+            margin-bottom: 50px;
+        }
+    }
+}
+
+// Featured Products
+.featured-products {
+    padding: 90px 0;
+    overflow: hidden;
+}
+
+.product-slider {
+    .owl-stage-outer {
+        padding: 0 20px;
+        margin: 0px -20px 0 -20px;
+    }
+}
+
+.brands-slider {
+    button.slide-arrow {
+        background-color: transparent;
+        border: 0;
+        position: absolute;
+        top: 48%;
+        transform: translateY(-50%);
+
+        &.prev-arrow {
+            left: -42px;
+        }
+        &.next-arrow {
+            right: -42px;
+        }
+    }
+    .slick-list {
+        margin: 0 -12px;
+    }
+    .slick-slide {
+        margin: 0 12px;
+
+        & >* {
+            margin: 12px 0;
+        }
+    }
+    .brand-item {
+        a {
+            display: block;
+            padding: 15px;
+        }
+        img {
+            filter: grayscale(1);
+            transition: 0.3s;
+        }
+
+        &:hover {
+            img {
+                filter: grayscale(0);
+            }
+        }
+    }
+}
+
+.our-brands {
+    padding: 90px 0;
+}
+
+.testimonial {
+    padding: 90px 0;
+    background-attachment: fixed;
+    position: relative;
+    z-index: 1;
+
+    &::before {
+        content: '';
+        position: absolute;
+        top: 0;
+        left: 0;
+        width: 100%;
+        height: 100%;
+        background-color: #000;
+        opacity: 0.6;
+        z-index: -1;
+    }
+
+    .review-col-head {
+        .review-title {
+            font-weight: 700;
+            font-size: 20px;
+            margin-bottom: 5px;
+        }
+        .reviewed-product-name {
+            font-size: 16px;
+            line-height: 24px;
+            display: block; 
+        }
+        .review-rating {
+            i {
+                font-size: 16px;
+                letter-spacing: 2px;
+            }
+            span {
+                font-weight: 300;
+            }
+        }
+    }
+    .review-body {
+        background-color: var(--color-white);
+        padding: 15px 25px;
+        font-size: 1rem;
+    }
+    .review-feedback-info {
+        position: relative;
+
+        &::before {
+            content: '';
+            background: #d8d8d8;
+            border-radius: 50%;
+            display: inline-block;
+            flex: 0 0 auto;
+            height: 30px;
+            margin-right: 10px;
+            vertical-align: middle;
+            width: 30px;
+        }
+        &::after {
+            color: #000;
+            content: attr(data-first-char);
+            display: block;
+            font-size: 1.09091em;
+            font-weight: 700;
+            left: 0;
+            position: absolute;
+            text-align: center;
+            text-transform: uppercase;
+            top: 50%;
+            width: 30px;
+            transform: translateY(-50%)
+        }
+        span {
+            font-weight: 500;
+        }
+
+        .postedby {
+            display: inline-block;
+        }
+    }
+}

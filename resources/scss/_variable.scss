@@ -1,0 +1,18 @@
+:root {
+    // Font Family
+    --font-primary: 'Open Sans', sans-serif;
+
+    // Colors
+    --color-theme: #C81F01;
+    --color-black: #2a3642;
+    --color-grayblack: #232F3E;
+    --color-white: #ffffff;
+}
+
+// Responsive Breakpoints
+$xxl: '(min-width: 1400px)';
+$xl: '(min-width: 1200px)';
+$lg: '(min-width: 992px)';
+$md: '(min-width: 768px)';
+$sm: '(min-width: 576px)';
+$xsm: '(max-width: 575.98px)';
